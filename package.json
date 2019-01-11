@@ -4,7 +4,9 @@
   "description": "Dockerised CRUD application tutorial",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "docker-compose -f docker/docker-compose.test.yml up --build --abort-on-container-exit",
+    "production": "docker-compose -f docker/docker-compose.yml up -d",
+    "build": "docker-compose -f docker/docker-compose.yml build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,15 @@
   "bugs": {
     "url": "https://github.com/aNerdInTheHand/docker-crud/issues"
   },
-  "homepage": "https://github.com/aNerdInTheHand/docker-crud#readme"
+  "homepage": "https://github.com/aNerdInTheHand/docker-crud#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.10"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0",
+    "tape": "^4.9.2"
+  }
 }
