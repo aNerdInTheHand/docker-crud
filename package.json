@@ -1,0 +1,19 @@
+{
+  "name": "docker-crud",
+  "version": "1.0.0",
+  "description": "Dockerised CRUD application tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aNerdInTheHand/docker-crud.git"
+  },
+  "author": "Nick Holvast",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aNerdInTheHand/docker-crud/issues"
+  },
+  "homepage": "https://github.com/aNerdInTheHand/docker-crud#readme"
+}
